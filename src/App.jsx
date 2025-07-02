@@ -1,21 +1,20 @@
-import Card from "./components/Card";
+import Counter from "./components/Counter.jsx";
+import ToggleButton from "./components/ToggleButton";
+import NameForm from "./components/NameForm";
+import CounterWithEffect from "./components/CounterWithEffect";
 import './App.css'
 
 function App() {
-    const items = ["React", "Vue", "Angular", "Vite", "JavaScript"];
     return (
-        <section>
-            <h1>!Hello word!</h1>
-            <Card title="Welcome to React" description="This is a simple card component." />
-            <Card title="Card two" description="This is a simple card component." />
-            <ul>
-                {
-                    items.map((item, index) => (
-                        <li key={index}>{item}</li>
-                    ))
-                }
-            </ul>
-        </section>
+        <>
+            <Counter/>
+            <ToggleButton/>
+            <h1>
+                Form of Names
+            </h1>
+            <NameForm/>
+            <CounterWithEffect />
+        </>
     )
 }
 
